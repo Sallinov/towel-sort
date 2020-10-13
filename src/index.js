@@ -1,6 +1,4 @@
-
-// You should implement your task here.
-
 module.exports = function towelSort (matrix) {
-  return [];
+	matrix ? matrix.forEach((item, i, arr) => (i+1) % 2 === 0 ? item.reverse() : item) : matrix = []
+	return [].concat(...matrix)
 }
